@@ -2,7 +2,7 @@
 
 import pika
 
-parameters = pika.URLParameters('amqps://rabbitmq:4daa08c6-4b2c-4f25-89c4-b4d36e7519bd@10.0.0.161:5672/%2f')
+parameters = pika.URLParameters('amqp://rabbitmq:4daa08c6-4b2c-4f25-89c4-b4d36e7519bd@10.0.0.161:5672/%2f')
 connection = pika.BlockingConnection(parameters)
 channel = connection.channel()
 method_frame, header_frame, body = channel.basic_get('hello')
