@@ -1,6 +1,6 @@
 import pika
 
-parameters = pika.URLParameters('amqps://admin:b9afcf0373310067792a1c8c1a9df6264a88cc1a@10.8.59.81:5671/%2f')
+parameters = pika.URLParameters('amqps://rabbitmq:4daa08c6-4b2c-4f25-89c4-b4d36e7519bd@10.0.0.161:5672/%2f')
 connection = pika.BlockingConnection(parameters)
 channel = connection.channel()
 
